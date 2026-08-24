@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purple Neon Contact</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    background:#07020d;
+    font-family:Poppins,sans-serif;
+    color:white;
+    margin:0;
+}
+
+#contact{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:45px;
+    color:#c084fc;
+    text-shadow:0 0 15px #a855f7;
+    margin-bottom:40px;
+}
+
+.contact-container{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1;
+    min-width:280px;
+    background:#12091d;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid rgba(168,85,247,.3);
+    box-shadow:0 0 20px rgba(168,85,247,.2);
+}
+
+.card h3{
+    color:#c084fc;
+}
+
+.contact-form{
+    flex:1;
+    min-width:320px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    background:#1b0d2b;
+    color:white;
+    border:1px solid #a855f7;
+    border-radius:10px;
+    outline:none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    box-shadow:0 0 20px #a855f7;
+}
+
+.btn{
+    padding:15px;
+    background:#a855f7;
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+    box-shadow:0 0 20px #a855f7;
+}
+
+.btn:hover{
+    background:#9333ea;
+}
+
+@media(max-width:900px){
+    .contact-container{
+        flex-direction:column;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Me</h2>
+
+<div class="contact-container">
+
+<div class="card">
+
+<h3>Get In Touch</h3>
+
+<p><b>Email:</b> holeshrimant2626@gmail.com.com</p>
+
+<p><b>Phone:</b> +91 8767562977</p>
+
+<p><b>Location:</b> Maharashtra, India</p>
+
+</div>
+
+<form class="contact-form">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Subject">
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button class="btn">Send Message</button>
+
+</form>
+
+</div>
+
+</section>
+
+</body>
+</html>
